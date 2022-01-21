@@ -1,0 +1,219 @@
+hp@DESKTOP-UMOOSQ5 MINGW64 ~
+$ git config --global user.name "munikumar"
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~
+$ git config --global user.name
+munikumar
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~
+$ git config --global user.email "tirunammunikumar@gmail.com"
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~
+$ git config --global user.email
+tirunammunikumar@gmail.com
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~
+$ git *
+git: '3D Objects' is not a git command. See 'git --help'.
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~
+$ git help log
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~
+$  tar xzf project.tar.gz
+tar (child): project.tar.gz: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~
+$ cd project
+bash: cd: project: No such file or directory
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~
+$ cd desktop
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop
+$ mkdir git
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop
+$ cd git
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git
+$ git init
+Initialized empty Git repository in C:/Users/hp/Desktop/git/.git/
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ git commit
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ansible.txt
+        linux.txt
+        python.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ansible.txt
+        linux.txt
+        python.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ git add .
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ ls
+ansible.txt  linux.txt  python.txt
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ git diff --cached
+diff --git a/ansible.txt b/ansible.txt
+new file mode 100644
+index 0000000..2436383
+--- /dev/null
++++ b/ansible.txt
+@@ -0,0 +1,214 @@
++Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 4.4.0-19041-Microsoft x86_64)
++
++ * Documentation:  https://help.ubuntu.com
++ * Management:     https://landscape.canonical.com
++ * Support:        https://ubuntu.com/advantage
++
++  System information as of Sat Jan  8 09:38:31 IST 2022
++
++  System load:            0.52
++  Usage of /home:         unknown
++  Memory usage:           93%
++  Swap usage:             3%
++  Processes:              7
++  Users logged in:        0
++  IPv4 address for eth3:  172.18.192.1
++  IPv4 address for wifi0: 192.168.43.139
++  IPv6 address for wifi0: 2401:4900:4fc6:e6ea:ad7b:171a:13e4:41bd
+:...skipping...
+diff --git a/ansible.txt b/ansible.txt
+new file mode 100644
+index 0000000..2436383
+--- /dev/null
++++ b/ansible.txt
+@@ -0,0 +1,214 @@
++Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 4.4.0-19041-Microsoft x86_64)
++
++ * Documentation:  https://help.ubuntu.com
++ * Management:     https://landscape.canonical.com
++ * Support:        https://ubuntu.com/advantage
++
++  System information as of Sat Jan  8 09:38:31 IST 2022
++
++  System load:            0.52
++  Usage of /home:         unknown
++  Memory usage:           93%
++  Swap usage:             3%
++  Processes:              7
++  Users logged in:        0
++  IPv4 address for eth3:  172.18.192.1
++  IPv4 address for wifi0: 192.168.43.139
++  IPv6 address for wifi0: 2401:4900:4fc6:e6ea:ad7b:171a:13e4:41bd
++  IPv6 address for wifi0: 2401:4900:4fc6:e6ea:908f:b281:14a5:80c7
++
++99 updates can be applied immediately.
++39 of these updates are standard security updates.
++To see these additional updates run: apt list --upgradable
++
++
++
++This message is shown once a day. To disable it please create the
++/home/muni/.hushlogin file.
++muni@LAPTOP-A29PUJ0P:~$ su - mango
++Password:
++su: Authentication failure
++muni@LAPTOP-A29PUJ0P:~$ su - mango
++Password:
++Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 4.4.0-19041-Microsoft x86_64)
++
++ * Documentation:  https://help.ubuntu.com
++ * Management:     https://landscape.canonical.com
++ * Support:        https://ubuntu.com/advantage
++
++  System information as of Sat Jan  8 09:39:46 IST 2022
++
++  System load:            0.52
++  Usage of /home:         unknown
++  Memory usage:           92%
++  Swap usage:             3%
++  Processes:              9
++  Users logged in:        0
++  IPv4 address for eth3:  172.18.192.1
++  IPv4 address for wifi0: 192.168.43.139
++  IPv6 address for wifi0: 2401:4900:4fc6:e6ea:ad7b:171a:13e4:41bd
++  IPv6 address for wifi0: 2401:4900:4fc6:e6ea:908f:b281:14a5:80c7
++
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ git commit -a
+Aborting commit due to empty commit message.
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ git branch experimental
+fatal: Not a valid object name: 'master'.
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ git checkout -b experimental
+Switched to a new branch 'experimental'
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (experimental)
+$ git branch
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (experimental)
+$ git switch master
+fatal: invalid reference: master
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (experimental)
+$ git checkout -b master
+Switched to a new branch 'master'
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ git commit -a
+Aborting commit due to empty commit message.
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ git merge experimental
+merge: experimental - not something we can merge
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ git diff
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ gitk
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$  git clone /home/alice/project myrepo
+Cloning into 'myrepo'...
+fatal: 'C:/Program Files/Git/home/alice/project' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$ gitk
+
+hp@DESKTOP-UMOOSQ5 MINGW64 ~/desktop/git (master)
+$

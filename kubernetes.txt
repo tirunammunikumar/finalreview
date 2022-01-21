@@ -1,0 +1,89 @@
+pod.yaml...........
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo
+spec:
+ containers:
+  - name: testpod
+    image: alpine:3.5
+    command: ["ping","8.8.8.8"]
+
+
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\hp\Desktop\KUBERNETS> kubectl apply -f pod.yaml
+pod/demo unchanged
+PS C:\Users\hp\Desktop\KUBERNETS> kubectl get pods
+NAME   READY   STATUS    RESTARTS      AGE
+demo   1/1     Running   1 (21s ago)   3m15s
+PS C:\Users\hp\Desktop\KUBERNETS> kubectl logs demo
+Error from server: Get "https://192.168.65.4:10250/containerLogs/default/demo/testpod": open /run/config/pki/apiserver-kubelet-client.crt: no such file or directory 
+PS C:\Users\hp\Desktop\KUBERNETS> kubectl logs     
+error: expected 'logs [-f] [-p] (POD | TYPE/NAME) [-c CONTAINER]'.
+POD or TYPE/NAME is a required argument for the logs command      
+See 'kubectl logs -h' for help and examples
+PS C:\Users\hp\Desktop\KUBERNETS> kubectl logs demo
+Error from server: Get "https://192.168.65.4:10250/containerLogs/default/demo/testpod": open /run/config/pki/apiserver-kubelet-client.crt: no such file or directory
+PS C:\Users\hp\Desktop\KUBERNETS> kubectl delete -f pod.yaml
+pod "demo" deleted
+PS C:\Users\hp\Desktop\KUBERNETS> 
+
+bb.yaml.........
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bb-demo
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      bb: web
+  template:
+    metadata:
+      labels:
+        bb: web
+    spec:
+      containers:
+      - name: bb-site
+        image: muni9700171727/getting-started
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bb-entrypoint
+  namespace: default
+spec:
+  type: NodePort
+  selector:
+    bb: web
+  ports:
+  - port: 3000
+    targetPort: 3000
+    nodePort: 30001   
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\hp\Desktop\KUBERNETS> kubectl apply -f bb.yaml
+deployment.apps/bb-demo created
+service/bb-entrypoint created
+PS C:\Users\hp\Desktop\KUBERNETS> kubectl get deployments
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+bb-demo   1/1     1            1           22s
+PS C:\Users\hp\Desktop\KUBERNETS> kubectl get services   
+NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+bb-entrypoint   NodePort    10.105.12.237   <none>        3000:30001/TCP   35s
+kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP          18h
+PS C:\Users\hp\Desktop\KUBERNETS> kubectl delete -f bb.yaml
+deployment.apps "bb-demo" deleted
+service "bb-entrypoint" deleted
+PS C:\Users\hp\Desktop\KUBERNETS> 
+

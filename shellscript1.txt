@@ -1,0 +1,181 @@
+munikumar@DESKTOP-UMOOSQ5:~$ echo $SHELL/bin/bash
+/bin/bash/bin/bash
+munikumar@DESKTOP-UMOOSQ5:~$ #!/bin/bash
+munikumar@DESKTOP-UMOOSQ5:~$ echo hello world
+hello world
+munikumar@DESKTOP-UMOOSQ5:~$ cat shell.sh
+cat: shell.sh: No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ nano
+munikumar@DESKTOP-UMOOSQ5:~$ cat shell.sh
+enter shell scripting
+munikumar@DESKTOP-UMOOSQ5:~$ ls -l shell.sh
+-rw-rw-r-- 1 munikumar munikumar 22 Jan 20 12:21 shell.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./shell.sh
+bash: ./shell.sh: Permission denied
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 shell.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./shell.sh
+./shell.sh: line 1: enter: command not found
+munikumar@DESKTOP-UMOOSQ5:~$ nano
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 names.sh
+munikumar@DESKTOP-UMOOSQ5:~$ cat names.sh
+#!bin/bash
+personal details
+name="muni"
+id=1234
+loc="tpt"
+echo "&name $id $loc"
+munikumar@DESKTOP-UMOOSQ5:~$ ./names.sh
+bash: ./names.sh: bin/bash: bad interpreter: No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ nano names.sh
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 names.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./names.sh
+bash: ./names.sh: bin/bash: bad interpreter: No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ cat names.sh
+#!bin/bash
+personal details
+name="muni"
+id=1234
+loc="tpt"
+echo "$name $id $loc"
+munikumar@DESKTOP-UMOOSQ5:~$ nano names.sh
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 names.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./names.sh
+bash: ./names.sh: bin/bash: bad interpreter: No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ echo$shell
+
+munikumar@DESKTOP-UMOOSQ5:~$ echo$SHELL
+bash: echo/bin/bash: No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ echo $SHELL
+/bin/bash
+munikumar@DESKTOP-UMOOSQ5:~$ cat names.sh
+#!bin/bash
+echo "personal details"
+name="muni"
+id=1234
+loc="tpt"
+echo "$name $id $loc"
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 names.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./names.sh
+bash: ./names.sh: bin/bash: bad interpreter: No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ nano names.sh
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 names.sh
+munikumar@DESKTOP-UMOOSQ5:~$
+munikumar@DESKTOP-UMOOSQ5:~$ ./names.sh
+bash: ./names.sh: bin/bash: bad interpreter: No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ nano names.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./names.sh
+personal details
+muni 1234 tpt
+munikumar@DESKTOP-UMOOSQ5:~$ ./script.sh
+bash: ./script.sh: No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ nano
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 read.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./read.sh
+bash: ./read.sh: bin/bash: bad interpreter: No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ nano read.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./read.sh
+what is ur name
+muni
+what is ur location
+kerala
+what is ur id
+123
+munikumar@DESKTOP-UMOOSQ5:~$ nano
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 parameter.sh
+chmod: cannot access 'parameter.sh': No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ nano parameter.sh
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 parameter.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./parameter.sh
+the script title is ./parameter.sh
+the 1st argument is
+the 2nd argument is
+the 3rd argument is
+the 4th argument is
+/$ is the pid of the script
+/# the total number of parameter in the script 0
+munikumar@DESKTOP-UMOOSQ5:~$ ./parameter.sh 1 2 3 4
+the script title is ./parameter.sh
+the 1st argument is 1
+the 2nd argument is 2
+the 3rd argument is 3
+the 4th argument is 4
+/$ is the pid of the script
+/# the total number of parameter in the script 4
+munikumar@DESKTOP-UMOOSQ5:~$ ./parameter.sh 5 6 7 8 9
+the script title is ./parameter.sh
+the 1st argument is 5
+the 2nd argument is 6
+the 3rd argument is 7
+the 4th argument is 8
+/$ is the pid of the script
+/# the total number of parameter in the script 5
+munikumar@DESKTOP-UMOOSQ5:~$ nano animala.sh
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 animala.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./animala.sh
+enter animal
+dog
+i like dog
+munikumar@DESKTOP-UMOOSQ5:~$ nano fruit
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 fruits.sh
+chmod: cannot access 'fruits.sh': No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 fruit.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./fruit.sh
+enter fruit
+apple
+i like apple
+munikumar@DESKTOP-UMOOSQ5:~$ cat fruit.sh
+
+#!/bin/bash
+echo "enter fruit"
+read fruit
+if [ $fruit = apple ]
+        then echo "i like apple"
+elif [ $fruit = mango ]
+        then echo "i like mango"
+elif [ $fruit = banana ]
+        then echo "i like banan"
+        else echo "i like $fruit"
+fi
+munikumar@DESKTOP-UMOOSQ5:~$
+munikumar@DESKTOP-UMOOSQ5:~$ nano
+munikumar@DESKTOP-UMOOSQ5:~$ cat add.sh
+#!bin/bash
+a=0
+while [ $a -lt 10 ]
+do
+        echo $a
+        a='expr $a + 1'
+done
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 add.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./add.sh
+bash: ./add.sh: bin/bash: bad interpreter: No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ nano add.sh
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 add.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./add.sh
+0
+./add.sh: line 3: [: too many arguments
+munikumar@DESKTOP-UMOOSQ5:~$ nano
+munikumar@DESKTOP-UMOOSQ5:~$ cat while.sh
+
+#!/bin/bash
+echo "demo of while loop"
+no=1
+while((no < 5))
+        do
+                echo "no is $no"
+                ((no++))
+        done
+munikumar@DESKTOP-UMOOSQ5:~$ chmod 774 while.sh
+munikumar@DESKTOP-UMOOSQ5:~$ ./while.sh
+demo of while loop
+no is 1
+no is 2
+no is 3
+no is 4
+munikumar@DESKTOP-UMOOSQ5:~$
+
+
+
+
+
+

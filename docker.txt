@@ -1,0 +1,1006 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master> cd app
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker -v
+Docker version 20.10.12, build e91ed57
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker build -t muni9700171727/getting-started .
+[+] Building 32.5s (10/15)
+ => [internal] load build definition from Dockerfile                                                                                                                 1.0s 1.0s > transferring dockerfile: 214B                                                                                                                                 0.4s 
+ => => transferring dockerfile: 214B                                                                                                                                 0.6s 0.4s > transferring context: 2B                                                                                                                                      0.0s 
+ => [internal] load .dockerignore                                                                                                                                    8.3s 0.6s auth] docker/dockerfile:pull token for registry-1.docker.io                                                                                                     0.0s 
+ => => transferring context: 2B                                                                                                                                      0.5s 0.0s > resolve docker.io/docker/dockerfile:1@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2                                                 0.2s 
+ => resolve image config for docker.io/docker/dockerfile:1                                                                                                           0.0s 8.3s                                                                                                                                                                 0.0s 
+ => [auth] docker/dockerfile:pull token for registry-1.docker.io                                                                                                     0.0s 
+0.0s                                                                                                                                                                 8.8s 
+ => docker-image://docker.io/docker/dockerfile:1@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2                                            10.2s 0.5s                                                                                                                                                                 0.0s 
+ => => resolve docker.io/docker/dockerfile:1@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2                                                 0.0s 
+0.2s                                                                                                                                                                 3.7s 
+ => => sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2 2.00kB / 2.00kB                                                                       0.0s 
+0.0s                                                                                                                                                                 0.0s 
+ => => sha256:93f32bd6dd9004897fed4703191f48924975081860667932a4df35ba567d7426 528B / 528B                                                                           5.5s 
+[+] Building 178.1s (16/16) FINISHED                                                                                                                                 5.5s 
+ => => transferring dockerfile: 214B                                                                                                                            0.4s 5.1s 
+ => [internal] load .dockerignore                                                                                                                               0.6s 
+ => resolve image config for docker.io/docker/dockerfile:1                                                                                                      8.3s 
+ => [auth] docker/dockerfile:pull token for registry-1.docker.io                                                                                                0.0s 
+ => docker-image://docker.io/docker/dockerfile:1@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2                                       10.5s 
+ => => resolve docker.io/docker/dockerfile:1@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2                                            0.2s 
+ => => sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2 2.00kB / 2.00kB                                                                  0.0s 
+ => => sha256:93f32bd6dd9004897fed4703191f48924975081860667932a4df35ba567d7426 528B / 528B                                                                      0.0s 
+ => => sha256:e532695ddd93ca7c85a816c67afdb352e91052fab7ac19a675088f80915779a7 1.21kB / 1.21kB                                                                  0.0s 
+ => => sha256:24a639a53085eb680e1d11618ac62f3977a3926fedf5b8471ace519b8c778030 9.67MB / 9.67MB                                                                  8.8s 
+ => => extracting sha256:24a639a53085eb680e1d11618ac62f3977a3926fedf5b8471ace519b8c778030                                                                       0.2s 
+ => [internal] load .dockerignore                                                                                                                               0.0s 
+ => [internal] load build definition from Dockerfile                                                                                                            0.0s 
+ => [auth] library/node:pull token for registry-1.docker.io                                                                                                     0.0s 
+ => CACHED [1/5] FROM docker.io/library/node:12-alpine@sha256:c3e7817c8fd124f1597cd66124d247db8e138e8ef311ba085b7104d900129d0b                                  0.0s 
+ => [internal] load build context                                                                                                                               8.9s 
+ => [2/5] RUN apk add --no-cache python2 g++ make                                                                                                              98.9s 
+ => [3/5] WORKDIR /app                                                                                                                                          1.4s 
+ => [4/5] COPY . .                                                                                                                                              1.2s 
+ => [5/5] RUN yarn install --production                                                                                                                        43.0s 
+ => exporting to image                                                                                                                                          5.7s 
+ => => exporting layers                                                                                                                                         5.2s 
+ => => naming to docker.io/muni9700171727/getting-started                                                                                                       0.1s 
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 muni9700171727/getting-started
+49fa22c4b29ee9d2fcb24f75991664cb7a639b72b23befb1741cd4d60b915926
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE                            COMMAND                  CREATED              STATUS              PORTS                    NAMES
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker push muni9700171727/getting-started
+The push refers to repository [docker.io/muni9700171727/getting-started]
+526809f84b29: Pushed
+1613dc10265e: Pushed
+debab135f43d: Pushed
+4eb06231aba4: Mounted from library/node
+8d3ac3489996: Mounted from muni9700171727/docker101tutorial
+latest: digest: sha256:28daccdecd78cfac5ef07cc4b530bd691390a4e340f3d18d821b2b769a1fe67a size: 2000
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 muni9700171727/getting-started
+c82d55c43fedfa3791366338cfd08d4a9667f8688b2490fd233277ee8287f9b5
+docker: Error response from daemon: driver failed programming external connectivity on endpoint gracious_chatterjee (40bcf63b47837c784cd07a66098c39d55e7c7061947e6b755797ac6118116a1e): Bind for 0.0.0.0:3000 failed: port is already allocated.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -d ubuntu bash -c "shuf -i 1-10000 -n 1 -o /data.txt && tail -f /dev/null"    
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+ea362f368469: Pull complete
+Digest: sha256:b5a61709a9a44284d88fb12e5c48db0409cfad5b69d4ff8224077c57302df9cf
+Status: Downloaded newer image for ubuntu:latest
+541a891f33f1efeb1815e5b70b020ee0bfe8e713d5748b75f4fea1b6e20a0e4e
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> cat /data.txt
+cat : Cannot find path 'C:\data.txt' because it does not exist.
+At line:1 char:1
++ cat /data.txt
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\data.txt:String) [Get-Content], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+ 
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker exec muni9700171727 cat /data.txt
+Error: No such container: muni9700171727
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE                            COMMAND                  CREATED          STATUS          PORTS                    NAMES
+541a891f33f1   ubuntu                           "bash -c 'shuf -i 1-…"   2 minutes ago    Up 2 minutes                             sad_swanson
+49fa22c4b29e   muni9700171727/getting-started   "docker-entrypoint.s…"   12 minutes ago   Up 12 minutes   0.0.0.0:3000->3000/tcp   thirsty_goldwasser
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker exec 49fa22c4b29e cat /data.txt  
+cat: can't open '/data.txt': No such file or directory
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker exec 541a891f33f1 cat /data.txt  
+4108
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -it ubuntu ls /
+bin   dev  home  lib32  libx32  mnt  proc  run   srv  tmp  var
+boot  etc  lib   lib64  media   opt  root  sbin  sys  usr
+PS C:\Users\hp\Downloads\getting-PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker volume create todo-db
+todo-db
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started
+Unable to find image 'getting-started:latest' locally
+docker: Error response from daemon: pull access denied for getting-started, repository does not exist or may require 'docker login': denied: requested access to the 
+resource is denied.
+See 'docker run --help'.
+Unable to find image 'getting-started:latest' locally
+docker: Error response from daemon: pull access denied for getting-started, repository does not exist or may require 'docker login': denied: requested access to the 
+resource is denied.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker volume inspect todo-db
+[
+    {
+        "CreatedAt": "2022-01-20T11:20:00Z",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/todo-db/_data",
+        "Name": "todo-db",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 `
+>>      -w /app -v "$(pwd):/app" `
+>>      node:12-alpine `
+>>      sh -c "yarn install && yarn run dev"
+Unable to find image 'node:12-alpine' locally
+12-alpine: Pulling from library/node
+59bf1c3509f3: Already exists
+56ea1bcfc516: Already exists
+55284a5c72ce: Already exists
+a9867c49b9eb: Already exists
+Digest: sha256:c3e7817c8fd124f1597cd66124d247db8e138e8ef311ba085b7104d900129d0b
+Status: Downloaded newer image for node:12-alpine
+70d1c6798b7816ce95dff8aaf0a1c9b707585e9e3b94392c89f6126733776cff
+docker: Error response from daemon: driver failed programming external connectivity on endpoint infallible_swirles (4be73668711017c55d28fe7faebdf4083f2ec3f30255498f6c3232a1a93b518a): Bind for 0.0.0.0:3000 failed: port is already allocated.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE                            COMMAND                  CREATED          STATUS         PORTS                    NAMES
+541a891f33f1   ubuntu                           "bash -c 'shuf -i 1-…"   9 minutes ago    Up 2 minutes                            sad_swanson
+49fa22c4b29e   muni9700171727/getting-started   "docker-entrypoint.s…"   19 minutes ago   Up 2 minutes   0.0.0.0:3000->3000/tcp   thirsty_goldwasser
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app>  docker logs -f 49fa22c4b29e  
+Using sqlite database at /etc/todos/todo.db
+Listening on port 3000
+Using sqlite database at /etc/todos/todo.db
+Listening on port 3000
+
+
+
+Multi container app
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master> cd app
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app>  docker ps                    
+CONTAINER ID   IMAGE                            COMMAND                  CREATED          STATUS         PORTS                    NAMES
+541a891f33f1   ubuntu                           "bash -c 'shuf -i 1-…"   13 minutes ago   Up 6 minutes                            sad_swanson       
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app>  docker logs -f 541a891f33f1
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app>  docker logs -f 49fa22c4b29e
+Using sqlite database at /etc/todos/todo.db
+Listening on port 3000
+Using sqlite database at /etc/todos/todo.db
+Listening on port 3000
+[+] Building 205.6s (15/15) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                           0.4s 
+ => => transferring dockerfile: 32B                                                                                                            0.0s 
+ => [internal] load .dockerignore                                                                                                              0.6s 
+ => => transferring context: 2B                                                                                                                0.0s 
+ => resolve image config for docker.io/docker/dockerfile:1                                                                                     4.0s 
+ => [auth] docker/dockerfile:pull token for registry-1.docker.io                                                                               0.0s 
+ => CACHED docker-image://docker.io/docker/dockerfile:1@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2                0.0s 
+ => [internal] load build definition from Dockerfile                                                                                           0.0s 
+ => [internal] load .dockerignore                                                                                                              0.0s 
+ => [internal] load metadata for docker.io/library/node:12-alpine                                                                              0.0s 
+ => CACHED [1/5] FROM docker.io/library/node:12-alpine                                                                                         0.0s 
+ => [internal] load build context                                                                                                              0.5s 
+ => => transferring context: 2.49kB                                                                                                            0.1s 
+ => [2/5] RUN apk add --no-cache python2 g++ make                                                                                            149.0s 
+ => [3/5] WORKDIR /app                                                                                                                         1.0s 
+ => [5/5] RUN yarn install --production                                                                                                       43.5s 
+ => exporting to image                                                                                                                         4.7s 
+ => => exporting layers                                                                                                                        4.4s 
+ => => writing image sha256:18d10abe55a1755fadd42aaec7c62d668ca24e6372da72180eaf268c7a56fef6                                                   0.1s 
+ => => naming to docker.io/muni9700171727/getting-started                                                                                      0.1s 
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker network create todo-app
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -d `
+>>      --network todo-app --network-alias mysql `
+>>      -v todo-mysql-data:/var/lib/mysql `
+>>      -e MYSQL_ROOT_PASSWORD=secret `
+>>      mysql:5.7
+Unable to find image 'mysql:5.7' locally
+5.7: Pulling from library/mysql
+72a69066d2fe: Pull complete
+93619dbc5b36: Pull complete
+99da31dd6142: Pull complete
+e5c707858ec0: Pull complete
+fc41578cbf60: Pull complete
+4785d896ef10: Pull complete
+7d250cdc93be: Pull complete
+2efe6ef3579a: Pull complete
+40dc4a5ca43a: Pull complete
+cd6f90222f59: Pull complete
+031e631e9021: Pull complete
+Digest: sha256:66480693e01295d85954bb5dbe2f41f29ebceb57d3d8098ea0c9d201473f2d8b
+Status: Downloaded newer image for mysql:5.7
+4e1199abc7b9ea2b049c3b20c8e0f7e8da6319dff5b8b601fba939a7fe22b7bb
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> dacker ps
+dacker : The term 'dacker' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name,   
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ dacker ps
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (dacker:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED              STATUS          PORTS                    NAMES
+4e1199abc7b9   mysql:5.7      "docker-entrypoint.s…"   About a minute ago   Up 58 seconds   3306/tcp, 33060/tcp      lucid_mahavira
+541a891f33f1   ubuntu         "bash -c 'shuf -i 1-…"   26 minutes ago       Up 18 minutes                            sad_swanson
+49fa22c4b29e   7e8f168be102   "docker-entrypoint.s…"   36 minutes ago       Up 18 minutes   0.0.0.0:3000->3000/tcp   thirsty_goldwasser
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker exec -it 4e1199abc7b9 mysql -u root -p        
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 2
+Server version: 5.7.37 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| todos              |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> docker run -it --network todo-app nicolaka/netshoot
+    -> dig mysql
+    -> exit
+    ->
+    -> SHOW DATABASES;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'docker run -it --network todo-app nicolaka/netshoot
+dig mysql
+exit
+
+SHOW DATABAS' at line 1
+mysql> exit
+Bye
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -it --network todo-app nicolaka/netshoot
+Unable to find image 'nicolaka/netshoot:latest' locally
+latest: Pulling from nicolaka/netshoot
+97518928ae5f: Already exists
+09706d35e05d: Pull complete
+4996ecc64030: Pull complete
+9a11de879aaa: Pull complete
+44f8e61e69d1: Pull complete
+dcf41a6beeb6: Pull complete
+d4d3a508f57b: Pull complete
+ca86b0e825d1: Pull complete
+7eeba344c2b1: Pull complete
+c52dc2d61c4a: Pull complete
+d04aa1a002c2: Pull complete
+7070cabd1e04: Pull complete
+Digest: sha256:d6942ec583d8e2818f5a5d7a71c303e861a70a11396ad9e9d25b355842e97589
+Status: Downloaded newer image for nicolaka/netshoot:latest
+                    dP            dP                           dP   
+                    88            88                           88
+88d888b. .d8888b. d8888P .d8888b. 88d888b. .d8888b. .d8888b. d8888P
+88'  `88 88ooood8   88   Y8ooooo. 88'  `88 88'  `88 88'  `88   88
+88    88 88.  ...   88         88 88    88 88.  .88 88.  .88   88
+dP    dP `88888P'   dP   `88888P' dP    dP `88888P' `88888P'   dP
+
+Welcome to Netshoot! (github.com/nicolaka/netshoot)
+
+
+
+ 65ffcd1a2bbc  ~ 
+; <<>> DiG 9.16.22 <<>> mysql
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20992
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;mysql.                         IN      A
+
+;; ANSWER SECTION:
+mysql.                  600     IN      A       172.18.0.2
+
+;; Query time: 319 msec
+;; SERVER: 127.0.0.11#53(127.0.0.11)
+;; WHEN: Thu Jan 20 11:47:08 UTC 2022
+;; MSG SIZE  rcvd: 44
+
+
+ 65ffcd1a2bbc  ~  ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'secret';
+zsh: command not found: ALTER
+
+ 65ffcd1a2bbc  ~  exit
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 `
+>>    -w /app -v "$(pwd):/app" `
+>>    --network todo-app `
+>>    -e MYSQL_HOST=mysql `
+>>    -e MYSQL_USER=root `
+>>    -e MYSQL_PASSWORD=secret `
+>>    -e MYSQL_DB=todos `
+>>    node:12-alpine `
+>>    sh -c "yarn install && yarn run dev"
+9e060e0cc25be31b7d53b51306924399296764ab41b228f5384b205d6f987ed9
+docker: Error response from daemon: driver failed programming external connectivity on endpoint relaxed_margulis (6a51ab952df90b2b3791f0f60885282e2e3b8e2dc081ca1d036744991f45c583): Bind for 0.0.0.0:3000 failed: port is already allocated.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> 
+65ffcd1a2bbc  ~  exit
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 `
+>>    -w /app -v "$(pwd):/app" `
+>>    --network todo-app `
+>>    -e MYSQL_HOST=mysql `
+>>    -e MYSQL_USER=root `
+>>    -e MYSQL_PASSWORD=secret `
+>>    -e MYSQL_DB=todos `
+>>    node:12-alpine `
+>>    sh -c "yarn install && yarn run dev"
+9e060e0cc25be31b7d53b51306924399296764ab41b228f5384b205d6f987ed9
+docker: Error response from daemon: driver failed programming external connectivity on endpoint relaxed_margulis (6a51ab952df90b2b3791f0f60885282e2e3b8e2dc081ca1d036744991f45c583): Bind for 0.0.0.0:3000 failed: port is already allocated.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> nodemon src/index.js
+nodemon : The term 'nodemon' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the       
+At line:1 char:1
++ ~~~~~~~
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                    NAMES
+541a891f33f1   ubuntu         "bash -c 'shuf -i 1-…"   35 minutes ago   Up 27 minutes                            sad_swanson
+49fa22c4b29e   7e8f168be102   "docker-entrypoint.s…"   45 minutes ago   Up 27 minutes   0.0.0.0:3000->3000/tcp   thirsty_goldwasser
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker exec -it 4e1199abc7b9 mysql -p todos        
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 3
+Server version: 5.7.37 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select * from todo_items;
+ERROR 1146 (42S02): Table 'todos.todo_items' doesn't exist
+mysql> select * from todo_items;
+ERROR 1146 (42S02): Table 'todos.todo_items' doesn't exist
+mysql> exit
+Bye
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker exec -it 7e8f168be102  mysql -p todos
+Error: No such container: 7e8f168be102
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker exec -it 7e8f168be102 mysql -p todos 
+Error: No such container: 7e8f168be102
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                    NAMES
+4e1199abc7b9   mysql:5.7      "docker-entrypoint.s…"   13 minutes ago   Up 13 minutes   3306/tcp, 33060/tcp      lucid_mahavira
+541a891f33f1   ubuntu         "bash -c 'shuf -i 1-…"   38 minutes ago   Up 31 minutes                            sad_swanson
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker exec -it 4e1199abc7b9 mysql -p todos
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 4
+Server version: 5.7.37 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+mysql>  select * from todo_items;
+ERROR 1146 (42S02): Table 'todos.todo_items' doesn't exist
+mysql>  select * from todo_items;
+ERROR 1146 (42S02): Table 'todos.todo_items' doesn't exist
+mysql>  select * from todo;
+ERROR 1146 (42S02): Table 'todos.todo' doesn't exist
+mysql>  select * from todo_items;
+ERROR 1146 (42S02): Table 'todos.todo_items' doesn't exist
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 `
+>>    -w /app -v "$(pwd):/app" `
+>>    -e MYSQL_HOST=mysql `
+>>    -e MYSQL_USER=root `
+>>    -e MYSQL_DB=todos `
+>>    node:12-alpine `
+e4a5da7b574694b56dab37009bd874f7ce67fb9e6e440a68683f7fdfae0e38e0
+docker: Error response from daemon: driver failed programming external connectivity on endpoint unruffled_wescoff (cd8ea1fb8a0b2d2d4ac1b6240244a50d28c5bbf9e0fd7d29409045d950e7e1d9): Bind for 0.0.0.0:3000 failed: port is already allocated.
+>>    -w /app -v "$(pwd):/app" `
+>>    --network todo-app `
+>>    -e MYSQL_HOST=mysql `
+>>    -e MYSQL_USER=root `
+>>    -e MYSQL_PASSWORD=secret `
+>>    -e MYSQL_DB=todos `
+>>    node:12-alpine `
+>>    sh -c "yarn install && yarn run dev"
+58c677bc094099120c8cea48a08a9a502f54ea49675bf493f305b0ad246e896b
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> nodemon src/index.js
+nodemon : The term 'nodemon' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the       
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ nodemon src/index.js
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (nodemon:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS                    NAMES
+58c677bc0940   node:12-alpine   "docker-entrypoint.s…"   40 seconds ago   Up 37 seconds   0.0.0.0:3000->3000/tcp   kind_easley
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS                    NAMES
+58c677bc0940   node:12-alpine   "docker-entrypoint.s…"   55 seconds ago   Up 51 seconds   0.0.0.0:3000->3000/tcp   kind_easley
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app>  docker exec -it 58c677bc0940 mysql -p todos        
+OCI runtime exec failed: exec failed: container_linux.go:380: starting container process caused: exec: "mysql": executable file not found in $PATH: 
+unknown
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED              STATUS              PORTS                    NAMES
+58c677bc0940   node:12-alpine   "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3000->3000/tcp   kind_easley
+4e1199abc7b9   mysql:5.7        "docker-entrypoint.s…"   33 minutes ago       Up 13 seconds       3306/tcp, 33060/tcp      lucid_mahavira
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app>  docker exec -it 4e1199abc7b9 mysql -p todos 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 2
+Server version: 5.7.37 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+mysql> select * from todo_items;
++--------------------------------------+------+-----------+
+| id                                   | name | completed |
++--------------------------------------+------+-----------+
+| 48c2d02c-5d39-434d-9423-b04250873038 | muni |         0 |
+| 57599e83-62f4-4c29-830d-edeec874c919 | sasi |         0 |
++--------------------------------------+------+-----------+
+2 rows in set (0.00 sec)
+
+mysql> exit
+Bye
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 `
+>>   -w /app -v "$(pwd):/app" `
+>>   --network todo-app `
+>>   -e MYSQL_HOST=mysql `
+>>   -e MYSQL_USER=root `
+>>   -e MYSQL_PASSWORD=secret `
+>>   -e MYSQL_DB=todos `
+>>   node:12-alpine `
+>>   sh -c "yarn install && yarn run dev"
+e72083c1dcdba487ecd165ca3185dd30e8ab246bc75b53658d9c155dfe4962e8
+docker: Error response from daemon: driver failed programming external connectivity on endpoint agitated_pare (ff246f0538578a888729d9eb594f6bd0fd3b348956c241e4bd96a23c2128e399): Bind for 0.0.0.0:3000 failed: port is already allocated.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 `
+>>   -w /app -v "$(pwd):/app" `
+>>   --network todo-app `
+>>   -e MYSQL_HOST=mysql `
+>>   -e MYSQL_USER=root `
+>>   -e MYSQL_PASSWORD=secret `
+>>   -e MYSQL_DB=todos `
+>>   node:12-alpine `
+>>   sh -c "yarn install && yarn run dev"
+3e361f0b2abf2d7d6ab48ada189ae9e6d147ba8d34d99811cdc55ffc96132e3a
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> 
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master> cd app
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker-compose up -d
+ERROR: yaml.parser.ParserError: while parsing a block mapping
+expected <block end>, but found '<block mapping start>'
+  in ".\..\docker-compose.yml", line 19, column 3
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3000:3000 `
+>>   -w /app -v "$(pwd):/app" `
+>>   --network todo-app `
+>>   -e MYSQL_HOST=mysql `
+>>   -e MYSQL_USER=root `
+>>   -e MYSQL_PASSWORD=secret `
+>>   -e MYSQL_DB=todos `
+>>   node:12-alpine `
+>>   sh -c "yarn install && yarn run dev"
+7a6b355d14a630f4f3d6f89f423c310cb634d84543cc94aa394c29510a4483a4
+docker: Error response from daemon: driver failed programming external connectivity on endpoint friendly_bassi (70c7a744b78c38a43e96ced2bc8a7c5d9ddc6eae1fd64ac2001b6ac4691b4981): Bind for 0.0.0.0:3000 failed: port is already allocated.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3001:3001 `
+>>   -w /app -v "$(pwd):/app" `
+>>   --network todo-app `
+>>   -e MYSQL_HOST=mysql `
+>>   -e MYSQL_USER=root `
+>>   -e MYSQL_DB=todos `
+>>   node:12-alpine `
+>>   sh -c "yarn install && yarn run dev"
+dc22d520fba34bb2bd109ba9f39664e9a8ce8d677b065e24c5567cc4555a2933
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker-compose up -d      
+ERROR: yaml.parser.ParserError: while parsing a block mapping
+expected <block end>, but found '<block mapping start>'
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker-compose version
+docker-compose version 1.29.2, build 5becea4c
+docker-py version: 5.0.0
+CPython version: 3.9.0
+OpenSSL version: OpenSSL 1.1.1g  21 Apr 2020
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3001:3001 `
+>>   --network todo-app `
+>>   -e MYSQL_HOST=mysql `
+>>   -e MYSQL_USER=root `
+>>   -e MYSQL_PASSWORD=secret `
+>>   -e MYSQL_DB=todos `
+>>   node:12-alpine `
+>>   sh -c "yarn install && yarn run dev"
+d7349dfc022c713b2e827499f9a788c4ef2abd5d9fb7f347886274163862e76e
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -d `
+>>   --network todo-app --network-alias mysql `
+>>   -v todo-mysql-data:/var/lib/mysql `
+>>   -e MYSQL_ROOT_PASSWORD=secret `
+>>   mysql:5.7
+b712673df211e1b31a1aefcba80fdf002e3bac767d9d19fe2a37d13afb3bb666
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED             STATUS          PORTS                    NAMES
+b712673df211   mysql:5.7        "docker-entrypoint.s…"   16 seconds ago      Up 13 seconds   3306/tcp, 33060/tcp      stupefied_agnesi
+d7349dfc022c   node:12-alpine   "docker-entrypoint.s…"   49 seconds ago      Up 46 seconds   0.0.0.0:3001->3001/tcp   reverent_hopper
+3e361f0b2abf   node:12-alpine   "docker-entrypoint.s…"   17 minutes ago      Up 17 minutes   0.0.0.0:3000->3000/tcp   awesome_knuth
+4e1199abc7b9   mysql:5.7        "docker-entrypoint.s…"   55 minutes ago      Up 21 minutes   3306/tcp, 33060/tcp      lucid_mahavira
+541a891f33f1   ubuntu           "bash -c 'shuf -i 1-…"   About an hour ago   Up 19 minutes                            sad_swanson
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker-compose up -d
+Creating network "getting-started-master_default" with the default driver
+Creating volume "getting-started-master_todo-mysql-data" with default driver
+Creating getting-started-master_mysql_1 ...
+Creating getting-started-master_app_1   ...
+Creating getting-started-master_app_1   ... error
+
+Creating getting-started-master_mysql_1 ... done
+r_app_1 (feed04b1be0df4c5fd49f1d450168c96305eb8cf97a1d42c396dc5173d08ee10): Bind for 0.0.0.0:3001 failed: port is already allocated
+
+ERROR: for app  Cannot start service app: driver failed programming external connectivity on endpoint getting-started-master_app_1 (feed04b1be0df4c5fd49f1d450168c96305eb8cf97a1d42c396dc5173d08ee10): Bind for 0.0.0.0:3001 failed: port is already allocated
+ERROR: Encountered errors while bringing up the project.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker-compose up -d
+getting-started-master_mysql_1 is up-to-date
+Starting getting-started-master_app_1 ... error
+
+ERROR: for getting-started-master_app_1  Cannot start service app: driver failed programming external connectivity on endpoint getting-started-master_app_1 (f52c496249463c3c5fc46ffc0accd52faff221e6a447cf6a4fa09ac81761ff49): Bind for 0.0.0.0:3001 failed: port is already allocated
+
+ERROR: for app  Cannot start service app: driver failed programming external connectivity on endpoint getting-started-master_app_1 (f52c496249463c3c5fc46ffc0accd52faff221e6a447cf6a4fa09ac81761ff49): Bind for 0.0.0.0:3001 failed: port is already allocated
+ERROR: Encountered errors while bringing up the project.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker-compose version
+docker-compose version 1.29.2, build 5becea4c
+CPython version: 3.9.0
+OpenSSL version: OpenSSL 1.1.1g  21 Apr 2020
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3001:3001 `
+>>   -w /app -v "$(pwd):/app" `
+>>   --network todo-app `
+>>   -e MYSQL_HOST=mysql `
+>>   -e MYSQL_USER=root `
+>>   -e MYSQL_PASSWORD=secret `
+>>   -e MYSQL_DB=todos `
+>>   node:12-alpine `
+>>   sh -c "yarn install && yarn run dev"
+a8b893f5a8a636097bc99d4d25a8880bc4f35c3c202b7feb6d89a63fdf6dcdd0
+docker: Error response from daemon: driver failed programming external connectivity on endpoint optimistic_easley (f0bcc062faadfed8c2369a671918b948e96c028a8c9a2848c7b71572a9681b65): Bind for 0.0.0.0:3001 failed: port is already allocated.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3002:3002 `
+>>   -w /app -v "$(pwd):/app" `
+>>   --network todo-app `
+>>   -e MYSQL_HOST=mysql `
+>>   -e MYSQL_USER=root `
+>>   -e MYSQL_PASSWORD=secret `
+>>   -e MYSQL_DB=todos `
+>>   node:12-alpine `
+>>   sh -c "yarn install && yarn run dev"
+70b90e54f7d7954a39cb46adc413fe89664e619e0be1dc4049f93abc1e8d9a15
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -d `           
+>>   --network todo-app --network-alias mysql `
+>>   -v todo-mysql-data:/var/lib/mysql `
+>>   -e MYSQL_ROOT_PASSWORD=secret `
+>>   -e MYSQL_DATABASE=todos `
+>>   mysql:5.7
+0d90726669ae3742228dea57aaf7226a54d1d835990401e26e5447fda7bde755
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED             STATUS          PORTS                    NAMES
+0d90726669ae   mysql:5.7        "docker-entrypoint.s…"   9 seconds ago       Up 6 seconds    3306/tcp, 33060/tcp      vibrant_jones
+70b90e54f7d7   node:12-alpine   "docker-entrypoint.s…"   37 seconds ago      Up 33 seconds   0.0.0.0:3002->3002/tcp   zen_chatterjee
+d7349dfc022c   node:12-alpine   "docker-entrypoint.s…"   5 minutes ago       Up 5 minutes    0.0.0.0:3001->3001/tcp   reverent_hopper
+3e361f0b2abf   node:12-alpine   "docker-entrypoint.s…"   21 minutes ago      Up 21 minutes   0.0.0.0:3000->3000/tcp   awesome_knuth
+4e1199abc7b9   mysql:5.7        "docker-entrypoint.s…"   59 minutes ago      Up 26 minutes   3306/tcp, 33060/tcp      lucid_mahavira
+541a891f33f1   ubuntu           "bash -c 'shuf -i 1-…"   About an hour ago   Up 24 minutes                            sad_swanson
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker-compose up -d
+Creating network "getting-started-master_default" with the default driver
+Creating getting-started-master_mysql_1 ...
+Creating getting-started-master_app_1   ...
+Creating getting-started-master_app_1   ... error
+
+Creating getting-started-master_mysql_1 ... done
+r_app_1 (e5c14e870e0edb2b9672f1f19bfce6674927319e946eec5a335a81d70d8d57d1): Bind for 0.0.0.0:3001 failed: port is already allocated
+
+ERROR: for app  Cannot start service app: driver failed programming external connectivity on endpoint getting-started-master_app_1 (e5c14e870e0edb2b9672f1f19bfce6674927319e946eec5a335a81d70d8d57d1): Bind for 0.0.0.0:3001 failed: port is already allocated
+ERROR: Encountered errors while bringing up the project.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app>
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master> cd app
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker-compose version
+docker-compose version 1.29.2, build 5becea4c
+docker-py version: 5.0.0
+CPython version: 3.9.0
+OpenSSL version: OpenSSL 1.1.1g  21 Apr 2020
+cd : Cannot find path 'C:\Users\hp\Downloads\getting-started-master\getting-started-master\app\docker-compose.yml' because it does not exist.       
++ cd docker-compose.yml
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\hp\Dow...ker-compose.yml:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker run -dp 3003:3003 `
+>>   -w /app -v "$(pwd):/app" `
+>>   --network todo-app `
+>>   -e MYSQL_HOST=mysql `
+>>   -e MYSQL_USER=root `
+>>   -e MYSQL_DB=todos `
+>>   node:12-alpine `
+>>   sh -c "yarn install && yarn run dev"
+2f6a5dfc12fb6f1d0d12e7bf2f3fcc6ee8845ae0ebb6a647c2744bd946c187ca
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app>  docker run -d `
+>>   --network todo-app --network-alias mysql `
+>>   -v todo-mysql-data:/var/lib/mysql `
+>>   -e MYSQL_ROOT_PASSWORD=secret `
+>>   -e MYSQL_DATABASE=todos `
+>>   mysql:5.7
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED              STATUS              PORTS                    NAMES
+451e15d59d71   mysql:5.7        "docker-entrypoint.s…"   9 seconds ago        Up 4 seconds        3306/tcp, 33060/tcp      priceless_pasteur        
+2f6a5dfc12fb   node:12-alpine   "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3003->3003/tcp   confident_benz
+b627c1dbe4d3   mysql:5.7        "docker-entrypoint.s…"   12 minutes ago       Up 11 minutes       3306/tcp, 33060/tcp      getting-started-master_mysql_1
+70b90e54f7d7   node:12-alpine   "docker-entrypoint.s…"   13 minutes ago       Up 13 minutes       0.0.0.0:3002->3002/tcp   zen_chatterjee
+d7349dfc022c   node:12-alpine   "docker-entrypoint.s…"   17 minutes ago       Up 17 minutes       0.0.0.0:3001->3001/tcp   reverent_hopper
+3e361f0b2abf   node:12-alpine   "docker-entrypoint.s…"   34 minutes ago       Up 34 minutes       0.0.0.0:3000->3000/tcp   awesome_knuth
+4e1199abc7b9   mysql:5.7        "docker-entrypoint.s…"   About an hour ago    Up 38 minutes       3306/tcp, 33060/tcp      lucid_mahavira
+541a891f33f1   ubuntu           "bash -c 'shuf -i 1-…"   2 hours ago          Up 36 minutes                                sad_swanson
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker-compose up -d
+getting-started-master_mysql_1 is up-to-date
+Recreating getting-started-master_app_1 ...
+Recreating getting-started-master_app_1 ... error
+
+ERROR: for getting-started-master_app_1  Cannot start service app: driver failed programming external connectivity on endpoint getting-started-master_app_1 (378ca52863ec7ea6b94c9c853010f3c98f28e918eb7401b68a4cf517bf550f47): Bind for 0.0.0.0:3003 failed: port is already allocated
+
+ERROR: for app  Cannot start service app: driver failed programming external connectivity on endpoint getting-started-master_app_1 (378ca52863ec7ea6b94c9c853010f3c98f28e918eb7401b68a4cf517bf550f47): Bind for 0.0.0.0:3003 failed: port is already allocated
+ERROR: Encountered errors while bringing up the project.
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker scan muni9700171727/getting-started
+Docker Scan relies upon access to Snyk, a third party provider, do you consent to proceed using Snyk? (y/N)
+y
+
+Testing muni9700171727/getting-started...
+
+Package manager:   apk
+Project name:      docker-image|muni9700171727/getting-started
+Docker image:      muni9700171727/getting-started
+Platform:          linux/amd64
+Base image:        node:12.22.9-alpine3.15
+
+✔ Tested 39 dependencies for known vulnerabilities, no vulnerable paths found.
+
+According to our scan, you are currently using the most secure version of the selected base image
+
+For more free scans that keep your images secure, sign up to Snyk at https://dockr.ly/3ePqVcp
+
+-------------------------------------------------------
+
+Testing muni9700171727/getting-started...
+
+Tested 189 dependencies for known vulnerabilities, found 6 vulnerabilities.
+
+
+Issues with no direct upgrade or patch:
+  ✗ Arbitrary File Overwrite [High Severity][https://snyk.io/vuln/SNYK-JS-TAR-1536528] in tar@2.2.2
+    introduced by sqlite3@5.0.2 > node-gyp@3.8.0 > tar@2.2.2
+  This issue was fixed in versions: 3.2.3, 4.4.15, 5.0.7, 6.1.2
+  ✗ Arbitrary File Overwrite [High Severity][https://snyk.io/vuln/SNYK-JS-TAR-1536531] in tar@2.2.2
+    introduced by sqlite3@5.0.2 > node-gyp@3.8.0 > tar@2.2.2
+  This issue was fixed in versions: 3.2.2, 4.4.14, 5.0.6, 6.1.1
+  ✗ Regular Expression Denial of Service (ReDoS) [Low Severity][https://snyk.io/vuln/SNYK-JS-TAR-1536758] in tar@2.2.2
+    introduced by sqlite3@5.0.2 > node-gyp@3.8.0 > tar@2.2.2
+  This issue was fixed in versions: 6.1.4, 5.0.8, 4.4.16
+  ✗ Arbitrary File Write [High Severity][https://snyk.io/vuln/SNYK-JS-TAR-1579147] in tar@2.2.2
+    introduced by sqlite3@5.0.2 > node-gyp@3.8.0 > tar@2.2.2
+  This issue was fixed in versions: 6.1.7, 5.0.8, 4.4.16
+    introduced by sqlite3@5.0.2 > node-gyp@3.8.0 > tar@2.2.2
+  This issue was fixed in versions: 6.1.9, 5.0.10, 4.4.18
+  ✗ Arbitrary File Write [High Severity][https://snyk.io/vuln/SNYK-JS-TAR-1579155] in tar@2.2.2
+    introduced by sqlite3@5.0.2 > node-gyp@3.8.0 > tar@2.2.2
+  This issue was fixed in versions: 6.1.9, 5.0.10, 4.4.18
+
+
+
+Package manager:   yarn
+Target file:       \app\package.json
+Project name:      101-app
+Docker image:      muni9700171727/getting-started
+
+Tip: Run `snyk wizard` to address these issues.
+
+
+
+Tested 2 projects, 1 contained vulnerable paths.
+
+
+
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker image history muni9700171727/getting-started 
+IMAGE          CREATED       CREATED BY                                      SIZE      COMMENT
+18d10abe55a1   2 hours ago   CMD ["node" "src/index.js"]                     0B        buildkit.dockerfile.v0
+<missing>      2 hours ago   RUN /bin/sh -c yarn install --production # b…   86.1MB    buildkit.dockerfile.v0
+<missing>      2 hours ago   COPY . . # buildkit                             4.6MB     buildkit.dockerfile.v0
+<missing>      2 hours ago   WORKDIR /app                                    0B        buildkit.dockerfile.v0
+<missing>      2 hours ago   RUN /bin/sh -c apk add --no-cache python2 g+…   223MB     buildkit.dockerfile.v0
+<missing>      8 days ago    /bin/sh -c #(nop)  CMD ["node"]                 0B
+<missing>      8 days ago    /bin/sh -c #(nop)  ENTRYPOINT ["docker-entry…   0B
+<missing>      8 days ago    /bin/sh -c #(nop) COPY file:4d192565a7220e13…   388B
+<missing>      8 days ago    /bin/sh -c apk add --no-cache --virtual .bui…   7.85MB
+<missing>      8 days ago    /bin/sh -c #(nop)  ENV YARN_VERSION=1.22.17     0B
+<missing>      8 days ago    /bin/sh -c addgroup -g 1000 node     && addu…   77.7MB
+<missing>      8 days ago    /bin/sh -c #(nop)  ENV NODE_VERSION=12.22.9     0B
+<missing>      8 weeks ago   /bin/sh -c #(nop)  CMD ["/bin/sh"]              0B
+<missing>      8 weeks ago   /bin/sh -c #(nop) ADD file:9233f6f2237d79659…   5.59MB
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app> docker image history --no-trunc muni9700171727/getting-started
+IMAGE                                                                     CREATED       CREATED BY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           SIZE      COMMENT
+sha256:18d10abe55a1755fadd42aaec7c62d668ca24e6372da72180eaf268c7a56fef6   2 hours ago   CMD ["node" "src/index.js"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           0B        buildkit.dockerfile.v0
+<missing>                                                                 2 hours ago   RUN /bin/sh -c yarn install --production # buildkit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           86.1MB    buildkit.dockerfile.v0
+<missing>                                                                 2 hours ago   COPY . . # buildkit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           4.6MB     buildkit.dockerfile.v0
+<missing>                                                                 2 hours ago   WORKDIR /app
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           0B        buildkit.dockerfile.v0
+<missing>                                                                 2 hours ago   RUN /bin/sh -c apk add --no-cache python2 g++ make # buildkit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           223MB     buildkit.dockerfile.v0
+<missing>                                                                 8 days ago    /bin/sh -c #(nop)  CMD ["node"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           0B
+<missing>                                                                 8 days ago    /bin/sh -c #(nop)  ENTRYPOINT ["docker-entrypoint.sh"]      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           0B
+<missing>                                                                 8 days ago    /bin/sh -c #(nop) COPY file:4d192565a7220e135cab6c77fbc1c73211b69f3d9fb37e62857b2c6eb9363d51 in /usr/local/bin/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           388B
+<missing>                                                                 8 days ago    /bin/sh -c apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version
+
+
+
+
+
+
+
+
+
+
+
+           7.85MB
+<missing>                                                                 8 days ago    /bin/sh -c #(nop)  ENV YARN_VERSION=1.22.17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           0B
+<missing>                                                                 8 days ago    /bin/sh -c addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64)           ARCH='x64'           CHECKSUM="bda831fbebfc00d12dbbc59b6d3736350d8cfbd495753c725800db10e591eb20"           ;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python2     && for key in       4ED778F539E3634C779C87C6D7062848A1AB005C       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       74F12602B6F1C4E913FAA37AD3A89613643B6201       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       A48C2BEE680E841632CD4E44F07496B3EB3C1762       108F52B48DB57BB0CC439B2997B01419BD92F80A       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && apk del .build-deps   && node --version   && npm --version   77.7MB
+<missing>                                                                 8 days ago    /bin/sh -c #(nop)  ENV NODE_VERSION=12.22.9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           0B
+<missing>                                                                 8 weeks ago   /bin/sh -c #(nop)  CMD ["/bin/sh"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           0B
+<missing>                                                                 8 weeks ago   /bin/sh -c #(nop) ADD file:9233f6f2237d79659a9521f7e390df217cec49f1a8aa3a12147bbca1956acdb9 in /
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           5.59MB
+PS C:\Users\hp\Downloads\getting-started-master\getting-started-master\app>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

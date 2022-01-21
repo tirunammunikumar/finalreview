@@ -1,0 +1,614 @@
+munikumar@DESKTOP-UMOOSQ5:~$ sudo apt update
+[sudo] password for munikumar:
+Hit:1 http://archive.ubuntu.com/ubuntu focal InReleaseGet:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:5 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1177 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:7 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [210 kB]
+Get:8 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [9100 B]
+Get:9 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [686 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [8628 kB]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [97.9 kB]
+Get:11 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [536 B]
+Get:12 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [675 kB]
+Get:13 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [115 kB]
+Get:14 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [13.0 kB]
+Get:15 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [21.8 kB]
+Get:16 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [4948 B]
+Get:17 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [536 B]
+Get:18 http://archive.ubuntu.com/ubuntu focal/universe Translation-en [5124 kB]
+Get:19 http://archive.ubuntu.com/ubuntu focal/universe amd64 c-n-f Metadata [265 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [144 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal/multiverse Translation-en [104 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 c-n-f Metadata [9136 B]
+Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1509 kB]
+Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [296 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.7 kB]
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [736 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [105 kB]
+Get:28 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [532 B]
+Get:29 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [893 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [196 kB]
+Get:31 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [20.0 kB]
+Get:32 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [24.8 kB]
+Get:33 http://archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [6928 B]
+Get:34 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [620 B]
+Get:35 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [42.0 kB]
+Get:36 http://archive.ubuntu.com/ubuntu focal-backports/main Translation-en [10.0 kB]
+Get:37 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [864 B]
+Get:38 http://archive.ubuntu.com/ubuntu focal-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:39 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [19.5 kB]
+Get:40 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [13.4 kB]
+Get:41 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [672 B]
+Get:42 http://archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 c-n-f Metadata [116 B]
+Fetched 16.0 MB in 1min 30s (179 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+98 packages can be upgraded. Run 'apt list --upgradable' to see them.
+munikumar@DESKTOP-UMOOSQ5:~$ sudo apt install software-properties-common
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  python3-software-properties
+The following packages will be upgraded:
+  python3-software-properties
+  software-properties-common
+2 upgraded, 0 newly installed, 0 to remove and 96 not upgraded.
+Need to get 35.5 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 software-properties-common all 0.99.9.8 [10.6 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-software-properties all 0.99.9.8 [24.9 kB]
+Fetched 35.5 kB in 1s (28.2 kB/s)
+(Reading database ... 32223 files and directories currently installed.)
+Preparing to unpack .../software-properties-common_0.99.9.8_all.deb ...
+Unpacking software-properties-common (0.99.9.8) over (0.98.9.5) ...
+Preparing to unpack .../python3-software-properties_0.99.9.8_all.deb ...
+Unpacking python3-software-properties (0.99.9.8) over (0.98.9.5) ...
+Setting up python3-software-properties (0.99.9.8) ...
+Setting up software-properties-common (0.99.9.8) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for dbus (1.12.16-2ubuntu2.1) ...
+munikumar@DESKTOP-UMOOSQ5:~$ sudo add-apt-repository --yes --update ppa:ansible/ansible
+Hit:1 http://archive.ubuntu.com/ubuntu focal InReleaseHit:2 http://security.ubuntu.com/ubuntu focal-security InRelease
+Get:3 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease [18.0 kB]
+Hit:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Get:6 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 Packages [1132 B]
+Get:7 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main Translation-en [756 B]
+Fetched 19.9 kB in 4s (4485 B/s)
+Reading package lists... Done
+munikumar@DESKTOP-UMOOSQ5:~$ sudo apt install ansible
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  ansible-core python3-bcrypt python3-jmespath
+  python3-kerberos python3-ntlm-auth
+  python3-packaging python3-paramiko
+  python3-pyparsing python3-requests-kerberos
+  python3-requests-ntlm python3-resolvelib
+  python3-winrm python3-xmltodict sshpass
+Suggested packages:
+  python3-gssapi python-pyparsing-doc
+The following NEW packages will be installed:
+  ansible ansible-core python3-bcrypt
+  python3-jmespath python3-kerberos
+  python3-ntlm-auth python3-packaging
+  python3-paramiko python3-pyparsing
+  python3-requests-kerberos python3-requests-ntlm
+  python3-resolvelib python3-winrm python3-xmltodict
+  sshpass
+0 upgraded, 15 newly installed, 0 to remove and 96 not upgraded.
+Need to get 22.8 MB of archives.
+After this operation, 300 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 python3-resolvelib all 0.5.4-2ppa~focal [12.6 kB]
+Get:2 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 ansible-core all 2.12.1-1ppa~focal [941 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-pyparsing all 2.4.6-1 [61.3 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-packaging all 20.3-1 [26.8 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-jmespath all 0.9.4-2ubuntu1 [21.5 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-kerberos amd64 1.1.14-3.1build1 [22.6 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-ntlm-auth all 1.1.0-1 [19.6 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-bcrypt amd64 3.1.7-2ubuntu1 [30.4 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 python3-paramiko all 2.6.0-2 [122 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-requests-kerberos all 0.12.0-2 [11.9 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-requests-ntlm all 1.1.0-1 [6004 B]
+Get:12 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-xmltodict all 0.12.0-1 [12.6 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-winrm all 0.3.0-2 [21.7 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal/universe amd64 sshpass amd64 1.06-1 [10.5 kB]
+Get:15 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 ansible all 5.2.0-1ppa~focal [21.5 MSelecting previously unselected package python3-pyparsing.
+(Reading database ... 32223 files and directories currently installed.)
+Preparing to unpack .../00-python3-pyparsing_2.4.6-1_all.deb ...
+Unpacking python3-pyparsing (2.4.6-1) ...
+Selecting previously unselected package python3-packaging.
+Preparing to unpack .../01-python3-packaging_20.3-1_all.deb ...
+Unpacking python3-packaging (20.3-1) ...
+Selecting previously unselected package python3-resolvelib.
+Preparing to unpack .../02-python3-resolvelib_0.5.4-2ppa~focal_all.deb ...
+Unpacking python3-resolvelib (0.5.4-2ppa~focal) ...
+Selecting previously unselected package ansible-core.
+Preparing to unpack .../03-ansible-core_2.12.1-1ppa~focal_all.deb ...
+Unpacking ansible-core (2.12.1-1ppa~focal) ...
+Selecting previously unselected package ansible.
+Preparing to unpack .../04-ansible_5.2.0-1ppa~focal_all.deb ...
+Unpacking ansible (5.2.0-1ppa~focal) ...
+
+Progress: [ 15%] [####............................]
+
+
+
+
+
+
+
+
+
+
+
+
+Progress: [ 15%] [################.................................................................................................]
+
+
+
+
+
+
+qexit
+
+
+
+
+
+
+Progress: [ 15%] [####............................]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Progress: [ 15%] [################.................................................................................................]
+
+Selecting previously unselected package python3-jmespath.
+Preparing to unpack .../05-python3-jmespath_0.9.4-2ubuntu1_all.deb ...
+Unpacking python3-jmespath (0.9.4-2ubuntu1) ...
+Selecting previously unselected package python3-kerberos.
+Preparing to unpack .../06-python3-kerberos_1.1.14-3.1build1_amd64.deb ...
+Unpacking python3-kerberos (1.1.14-3.1build1) ...
+Selecting previously unselected package python3-ntlm-auth.
+Preparing to unpack .../07-python3-ntlm-auth_1.1.0-1_all.deb ...
+Unpacking python3-ntlm-auth (1.1.0-1) ...
+Selecting previously unselected package python3-bcrypt.
+Preparing to unpack .../08-python3-bcrypt_3.1.7-2ubuntu1_amd64.deb ...
+Unpacking python3-bcrypt (3.1.7-2ubuntu1) ...
+Selecting previously unselected package python3-paramiko.
+Preparing to unpack .../09-python3-paramiko_2.6.0-2_all.deb ...
+Unpacking python3-paramiko (2.6.0-2) ...
+Selecting previously unselected package python3-requests-kerberos.
+Preparing to unpack .../10-python3-requests-kerberos_0.12.0-2_all.deb ...
+Unpacking python3-requests-kerberos (0.12.0-2) ...
+Selecting previously unselected package python3-requests-ntlm.
+Preparing to unpack .../11-python3-requests-ntlm_1.1.0-1_all.deb ...
+Unpacking python3-requests-ntlm (1.1.0-1) ...
+Selecting previously unselected package python3-xmltodict.
+Preparing to unpack .../12-python3-xmltodict_0.12.0-1_all.deb ...
+Unpacking python3-xmltodict (0.12.0-1) ...
+Selecting previously unselected package python3-winrm.
+Preparing to unpack .../13-python3-winrm_0.3.0-2_all.deb ...
+Unpacking python3-winrm (0.3.0-2) ...
+Selecting previously unselected package sshpass.
+Preparing to unpack .../14-sshpass_1.06-1_amd64.deb ...
+Unpacking sshpass (1.06-1) ...
+Setting up python3-ntlm-auth (1.1.0-1) ...
+Setting up python3-bcrypt (3.1.7-2ubuntu1) ...
+Setting up python3-resolvelib (0.5.4-2ppa~focal) ...
+Setting up python3-kerberos (1.1.14-3.1build1) ...##################################...............................................]
+Setting up sshpass (1.06-1) ...#########################################################...........................................]
+Setting up python3-xmltodict (0.12.0-1) ...#################################################.......................................]
+Setting up python3-pyparsing (2.4.6-1) ...#####################################################....................................]
+Setting up python3-jmespath (0.9.4-2ubuntu1) ...###################################################................................]
+Setting up python3-requests-kerberos (0.12.0-2) ...####################################################............................]
+Setting up python3-paramiko (2.6.0-2) ...#################################################################.........................]
+Setting up python3-requests-ntlm (1.1.0-1) ...################################################################.....................]
+Setting up python3-packaging (20.3-1) ...#########################################################################.................]
+Setting up python3-winrm (0.3.0-2) ...################################################################################.............]
+Setting up ansible-core (2.12.1-1ppa~focal) ...##########################################################################..........]
+Setting up ansible (5.2.0-1ppa~focal) ...####################################################################################......]
+Progress: [ 97%] [#############################################################################################################....]
+
+
+
+
+
+Progress: [ 15%] [####............................]
+munikumar@DESKTOP-UMOOSQ5:~$ ansible-galaxy-h
+ansible-galaxy-h: command not found
+munikumar@DESKTOP-UMOOSQ5:~$ ansible -h
+usage: ansible [-h] [--version] [-v] [-b]
+               [--become-method BECOME_METHOD]
+               [--become-user BECOME_USER]
+               [-K | --become-password-file BECOME_PASSWORD_FILE]
+               [-i INVENTORY] [--list-hosts]
+               [-l SUBSET] [-P POLL_INTERVAL]
+               [-B SECONDS] [-o] [-t TREE]
+               [--private-key PRIVATE_KEY_FILE]
+               [-u REMOTE_USER] [-c CONNECTION]
+               [-T TIMEOUT]
+               [--ssh-common-args SSH_COMMON_ARGS]
+               [--sftp-extra-args SFTP_EXTRA_ARGS]
+               [--scp-extra-args SCP_EXTRA_ARGS]
+               [--ssh-extra-args SSH_EXTRA_ARGS]
+               [-k | --connection-password-file CONNECTION_PASSWORD_FILE]
+               [-C] [--syntax-check] [-D]
+               [-e EXTRA_VARS]
+               [--vault-id VAULT_IDS]
+               [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES]
+               [-f FORKS] [-M MODULE_PATH]
+               [--playbook-dir BASEDIR]
+               [--task-timeout TASK_TIMEOUT]
+               [-a MODULE_ARGS] [-m MODULE_NAME]
+               pattern
+
+Define and run a single task 'playbook' against a
+set of hosts
+
+positional arguments:
+  pattern               host pattern
+
+optional arguments:
+  --ask-vault-password, --ask-vault-pass
+                        ask for vault password
+  --become-password-file BECOME_PASSWORD_FILE, --become-pass-file BECOME_PASSWORD_FILE
+                        Become password file
+  --connection-password-file CONNECTION_PASSWORD_FILE, --conn-pass-file CONNECTION_PASSWORD_FILE
+                        Connection password file
+  --list-hosts          outputs a list of matching
+                        hosts; does not execute
+                        anything else
+  --playbook-dir BASEDIR
+                        Since this tool does not use
+                        playbooks, use this as a
+                        substitute playbook
+                        directory.This sets the
+                        relative path for many
+                        features including roles/
+                        group_vars/ etc.
+  --syntax-check        perform a syntax check on
+                        the playbook, but do not
+                        execute it
+  --task-timeout TASK_TIMEOUT
+                        set task timeout limit in
+                        seconds, must be positive
+                        integer.
+  --vault-id VAULT_IDS  the vault identity to use
+  --vault-password-file VAULT_PASSWORD_FILES, --vault-pass-file VAULT_PASSWORD_FILES
+                        vault password file
+  --version             show program's version
+                        number, config file
+                        location, configured module
+                        search path, module
+                        location, executable
+                        location and exit
+  -B SECONDS, --background SECONDS
+                        run asynchronously, failing
+                        after X seconds
+                        (default=N/A)
+  -C, --check           don't make any changes;
+                        instead, try to predict some
+                        of the changes that may
+                        occur
+  -D, --diff            when changing (small) files
+                        and templates, show the
+                        differences in those files;
+                        works great with --check
+  -K, --ask-become-pass
+                        ask for privilege escalation
+                        password
+  -M MODULE_PATH, --module-path MODULE_PATH
+                        prepend colon-separated
+                        path(s) to module library (d
+                        efault=~/.ansible/plugins/mo
+                        dules:/usr/share/ansible/plu
+                        gins/modules)
+  -P POLL_INTERVAL, --poll POLL_INTERVAL
+                        set the poll interval if
+                        using -B (default=15)
+  -a MODULE_ARGS, --args MODULE_ARGS
+                        The action's options in
+                        space separated k=v format:
+                        -a 'opt1=val1 opt2=val2'
+  -e EXTRA_VARS, --extra-vars EXTRA_VARS
+                        set additional variables as
+                        key=value or YAML/JSON, if
+                        filename prepend with @
+  -f FORKS, --forks FORKS
+                        specify number of parallel
+                        processes to use (default=5)
+  -h, --help            show this help message and
+                        exit
+  -i INVENTORY, --inventory INVENTORY, --inventory-file INVENTORY
+                        specify inventory host path
+                        or comma separated host
+                        list. --inventory-file is
+                        deprecated
+  -k, --ask-pass        ask for connection password
+  -l SUBSET, --limit SUBSET
+                        further limit selected hosts
+                        to an additional pattern
+  -m MODULE_NAME, --module-name MODULE_NAME
+                        Name of the action to
+                        execute (default=command)
+  -o, --one-line        condense output
+  -t TREE, --tree TREE  log output to this directory
+  -v, --verbose         verbose mode (-vvv for more,
+                        -vvvv to enable connection
+                        debugging)
+
+Privilege Escalation Options:
+  control how and which user you become as on
+  target hosts
+
+  --become-method BECOME_METHOD
+                        privilege escalation method
+                        to use (default=sudo), use
+                        `ansible-doc -t become -l`
+                        to list valid choices.
+  --become-user BECOME_USER
+                        run operations as this user
+                        (default=root)
+  -b, --become          run operations with become
+                        (does not imply password
+                        prompting)
+
+Connection Options:
+  control as whom and how to connect to hosts
+
+  --private-key PRIVATE_KEY_FILE, --key-file PRIVATE_KEY_FILE
+                        use this file to
+                        authenticate the connection
+  --scp-extra-args SCP_EXTRA_ARGS
+                        specify extra arguments to
+                        pass to scp only (e.g. -l)
+  --sftp-extra-args SFTP_EXTRA_ARGS
+                        specify extra arguments to
+                        pass to sftp only (e.g. -f,
+                        -l)
+  --ssh-common-args SSH_COMMON_ARGS
+                        specify common arguments to
+                        pass to sftp/scp/ssh (e.g.
+                        ProxyCommand)
+  --ssh-extra-args SSH_EXTRA_ARGS
+                        specify extra arguments to
+                        pass to ssh only (e.g. -R)
+  -T TIMEOUT, --timeout TIMEOUT
+                        override the connection
+                        timeout in seconds
+                        (default=10)
+  -c CONNECTION, --connection CONNECTION
+                        connection type to use
+                        (default=smart)
+  -u REMOTE_USER, --user REMOTE_USER
+                        connect as this user
+                        (default=None)
+
+Some actions do not make sense in Ad-Hoc (include,
+meta, etc)
+munikumar@DESKTOP-UMOOSQ5:~$ ansible --version
+ansible [core 2.12.1]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/munikumar/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/munikumar/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+munikumar@DESKTOP-UMOOSQ5:~$ ssh-agent bash
+munikumar@DESKTOP-UMOOSQ5:~$ ansible all -m setup
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+munikumar@DESKTOP-UMOOSQ5:~$ ansible-galaxy -h
+usage: ansible-galaxy [-h] [--version] [-v] TYPE ...
+
+Perform various Role and Collection related
+operations.
+
+positional arguments:
+  TYPE
+    collection   Manage an Ansible Galaxy
+                 collection.
+    role         Manage an Ansible Galaxy role.
+
+optional arguments:
+  --version      show program's version number,
+                 config file location, configured
+                 module search path, module
+                 location, executable location and
+                 exit
+  -h, --help     show this help message and exit
+  -v, --verbose  verbose mode (-vvv for more, -vvvv
+                 to enable connection debugging)
+munikumar@DESKTOP-UMOOSQ5:~$ ansible-galaxy init --force --offline munikumarrole
+- Role munikumarrole was created successfully
+munikumar@DESKTOP-UMOOSQ5:~$ tree munikumarrole
+
+Command 'tree' not found, but can be installed with:
+
+sudo apt install tree
+
+munikumar@DESKTOP-UMOOSQ5:~$ cd munikumarrolr
+bash: cd: munikumarrolr: No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~$ sudo apt install tree
+[sudo] password for munikumar:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following NEW packages will be installed:
+  tree
+0 upgraded, 1 newly installed, 0 to remove and 96 not upgraded.
+Need to get 43.0 kB of archives.
+After this operation, 115 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 tree amd64 1.8.0-1 [43.0 kB]
+Fetched 43.0 kB in 2s (23.4 kB/s)
+Selecting previously unselected package tree.
+(Reading database ... 76923 files and directories currently installed.)
+Preparing to unpack .../tree_1.8.0-1_amd64.deb ...
+Unpacking tree (1.8.0-1) ...
+Setting up tree (1.8.0-1) ...
+Processing triggers for man-db (2.9.1-1) ...
+munikumar@DESKTOP-UMOOSQ5:~$ tree munikumarrole/
+munikumarrole/
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+8 directories, 8 files
+munikumar@DESKTOP-UMOOSQ5:~$ sudo ansible-playbook -i hosts muni_orchestrate.yml -vvv
+ansible-playbook [core 2.12.1]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+Using /etc/ansible/ansible.cfg as config file
+ERROR! the playbook: muni_orchestrate.yml could not be found
+munikumar@DESKTOP-UMOOSQ5:~$ sudo ansible-playbook -i hosts munikumar_orchestrate.yml -vvv
+ansible-playbook [core 2.12.1]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+Using /etc/ansible/ansible.cfg as config file
+ERROR! the playbook: munikumar_orchestrate.yml could not be found
+munikumar@DESKTOP-UMOOSQ5:~$ nano
+munikumar@DESKTOP-UMOOSQ5:~$ sudo ansible-playbook -i hosts munikumar_orchestration.yml -vvv
+ansible-playbook [core 2.12.1]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+Using /etc/ansible/ansible.cfg as config file
+host_list declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+script declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+auto declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+yaml declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+ini declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+toml declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+[WARNING]: Unable to parse /home/munikumar/hosts as an inventory source
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/munikumar/munikumar_orchestration.yml': line 4, column 2, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- roles:
+ - {role: install-tomcat}
+ ^ here
+munikumar@DESKTOP-UMOOSQ5:~$ nano munikumar_orchestration.yml
+munikumar@DESKTOP-UMOOSQ5:~$ nano munikumar_orchestration.yml
+munikumar@DESKTOP-UMOOSQ5:~$ sudo ansible-playbook -i hosts munikumar_orchestration.yml -vvv
+ansible-playbook [core 2.12.1]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+Using /etc/ansible/ansible.cfg as config file
+host_list declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+script declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+auto declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+yaml declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+ini declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+toml declined parsing /home/munikumar/hosts as it did not pass its verify_file() method
+[WARNING]: Unable to parse /home/munikumar/hosts as an inventory source
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  but found another document
+
+The error appears to be in '/home/munikumar/munikumar_orchestration.yml': line 6, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- {role: start-tomcat}
+---
+^ here
+munikumar@DESKTOP-UMOOSQ5:~$ mkdir muni-playbook
+munikumar@DESKTOP-UMOOSQ5:~$ cd muni-playbook
+munikumar@DESKTOP-UMOOSQ5:~/muni-playbook$ ansible-galaxy init --force --offline install-tomcat
+- Role install-tomcat was created successfully
+munikumar@DESKTOP-UMOOSQ5:~/muni-playbook$ cd install-tomcat
+munikumar@DESKTOP-UMOOSQ5:~/muni-playbook/install-tomcat$ ansible-galaxy init --force --offline start-tomcat- Role start-tomcat was created successfully
+
+
+
+
+
+
+

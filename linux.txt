@@ -1,0 +1,792 @@
+munikumar@DESKTOP-UMOOSQ5:~$ pwd
+/home/munikumar
+munikumar@DESKTOP-UMOOSQ5:~$ mkdir abhi
+munikumar@DESKTOP-UMOOSQ5:~$ cd abhi
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ echo "welcome to my world" > muni.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ cat muni.txt
+welcome to my world
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ echo "welcome to my life" >muni.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ cat muni.txt
+welcome to my life
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ echo "welcome to my life" >> muni.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ cat muni.txt
+welcome to my life
+welcome to my life
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls
+muni.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ cd ..
+munikumar@DESKTOP-UMOOSQ5:~$ ps
+  PID TTY          TIME CMD
+   10 tty1     00:00:00 bash
+   80 tty1     00:00:00 ps
+munikumar@DESKTOP-UMOOSQ5:~$ cd abhi
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ touch sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls
+muni.txt  sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ nano
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ cat topics.txt
+linux
+ubuntu
+python
+ansible
+shell scripting
+docker
+git hub
+kubernates
+github
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls
+muni.txt  sasi.txt  topics.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ mkdir kubernetes
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls
+kubernetes  muni.txt  sasi.txt  topics.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ cd ..
+munikumar@DESKTOP-UMOOSQ5:~$ mkdir run
+munikumar@DESKTOP-UMOOSQ5:~$ touch user.txt
+munikumar@DESKTOP-UMOOSQ5:~$ ls
+abhi  run  temp  user.txt
+munikumar@DESKTOP-UMOOSQ5:~$ cd run
+munikumar@DESKTOP-UMOOSQ5:~/run$ touch user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ touch user2.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ ls
+user1.txt  user2.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ echo "life is sooo beautiful" >> user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ cat user1.txt
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+life is sooo beautiful
+munikumar@DESKTOP-UMOOSQ5:~/run$ less user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ less user1.txt
+munikumar@DESKTOP-UMOOSQ5:~/run$ cd ..
+munikumar@DESKTOP-UMOOSQ5:~$ cd abhi
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls
+kubernetes  muni.txt  sasi.txt  topics.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ mv topics kubernetesmv: cannot stat 'topics': No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ mv topics.txt kubernetes
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls
+kubernetes  muni.txt  sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ cd kubernetes
+munikumar@DESKTOP-UMOOSQ5:~/abhi/kubernetes$ ls
+topics.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi/kubernetes$ cp topics.txt abhi
+munikumar@DESKTOP-UMOOSQ5:~/abhi/kubernetes$ cd ..
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls
+kubernetes  muni.txt  sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ cp muni.txt sasi.txtmunikumar@DESKTOP-UMOOSQ5:~/abhi$ cat muni.txt
+welcome to my life
+welcome to my life
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ mv muni.txt sasi.txtmunikumar@DESKTOP-UMOOSQ5:~/abhi$ ls il
+ls: cannot access 'il': No such file or directory
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls -il
+total 0
+1125899907122499 drwxr-xr-x 1 munikumar munikumar 4096 Jan 20 10:50 kubernetes
+1407374883833153 -rw-r--r-- 1 munikumar munikumar   38 Jan 20 10:31 sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls -l
+total 0
+drwxr-xr-x 1 munikumar munikumar 4096 Jan 20 10:50 kubernetes
+-rw-r--r-- 1 munikumar munikumar   38 Jan 20 10:31 sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls -i
+1125899907122499 kubernetes
+1407374883833153 sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ cd ..
+munikumar@DESKTOP-UMOOSQ5:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,munikumar
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:munikumar
+fax:x:21:
+voice:x:22:
+cdrom:x:24:munikumar
+floppy:x:25:munikumar
+tape:x:26:
+sudo:x:27:munikumar
+audio:x:29:munikumar
+dip:x:30:munikumar
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:munikumar
+sasl:x:45:
+plugdev:x:46:munikumar
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:munikumar
+lxd:x:118:
+munikumar:x:1000:
+munikumar@DESKTOP-UMOOSQ5:~$ sudo groupadd muni
+[sudo] password for munikumar:
+Sorry, try again.
+[sudo] password for munikumar:
+munikumar@DESKTOP-UMOOSQ5:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,munikumar
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:munikumar
+fax:x:21:
+voice:x:22:
+cdrom:x:24:munikumar
+floppy:x:25:munikumar
+tape:x:26:
+sudo:x:27:munikumar
+audio:x:29:munikumar
+dip:x:30:munikumar
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:munikumar
+sasl:x:45:
+plugdev:x:46:munikumar
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:munikumar
+lxd:x:118:
+munikumar:x:1000:
+muni:x:1001:
+munikumar@DESKTOP-UMOOSQ5:~$ sudo useradd sasi
+munikumar@DESKTOP-UMOOSQ5:~$ sudo adduser sasi
+adduser: The user `sasi' already exists.
+munikumar@DESKTOP-UMOOSQ5:~$ sudo adduser abhi
+Adding user `abhi' ...
+Adding new group `abhi' (1003) ...
+Adding new user `abhi' (1002) with group `abhi' ...
+Creating home directory `/home/abhi' ...
+Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for abhi
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n] y
+munikumar@DESKTOP-UMOOSQ5:~$ su abhi
+Password:
+abhi@DESKTOP-UMOOSQ5:/home/munikumar$ pwd
+/home/munikumar
+abhi@DESKTOP-UMOOSQ5:/home/munikumar$ cd
+abhi@DESKTOP-UMOOSQ5:~$ su munikumar
+Password:
+munikumar@DESKTOP-UMOOSQ5:/home/abhi$ cd
+munikumar@DESKTOP-UMOOSQ5:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,munikumar
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:munikumar
+fax:x:21:
+voice:x:22:
+cdrom:x:24:munikumar
+floppy:x:25:munikumar
+tape:x:26:
+sudo:x:27:munikumar
+audio:x:29:munikumar
+dip:x:30:munikumar
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:munikumar
+sasl:x:45:
+plugdev:x:46:munikumar
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:munikumar
+lxd:x:118:
+munikumar:x:1000:
+muni:x:1001:
+sasi:x:1002:
+abhi:x:1003:
+munikumar@DESKTOP-UMOOSQ5:~$ cd abhi
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls
+kubernetes  sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ chmod 774 sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls
+kubernetes  sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls sasi.txt
+sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls -l sasi.txt
+-rwxrwxr-- 1 munikumar munikumar 38 Jan 20 10:31 sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls -il sasi.txt
+1407374883833153 -rwxrwxr-- 1 munikumar munikumar 38 Jan 20 10:31 sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ cd ..
+munikumar@DESKTOP-UMOOSQ5:~$ find . - name *.txt
+.
+./.bashrc
+./.bash_history
+./.bash_logout
+./.landscape
+./.landscape/sysinfo.log
+./.local
+./.local/share
+./.local/share/nano
+./.motd_shown
+./.profile
+./.sudo_as_admin_successful
+./abhi
+./abhi/kubernetes
+./abhi/kubernetes/abhi
+./abhi/kubernetes/topics.txt
+./abhi/sasi.txt
+./run
+./run/user1.txt
+./run/user2.txt
+./temp
+./user.txt
+find: ‘-’: No such file or directory
+find: ‘name’: No such file or directory
+user.txt
+munikumar@DESKTOP-UMOOSQ5:~$ find , - name *.*
+find: ‘,’: No such file or directory
+find: ‘-’: No such file or directory
+find: ‘name’: No such file or directory
+user.txt
+munikumar@DESKTOP-UMOOSQ5:~$ find . - name *.*
+.
+./.bashrc
+./.bash_history
+./.bash_logout
+./.landscape
+./.landscape/sysinfo.log
+./.local
+./.local/share
+./.local/share/nano
+./.motd_shown
+./.profile
+./.sudo_as_admin_successful
+./abhi
+./abhi/kubernetes
+./abhi/kubernetes/abhi
+./abhi/kubernetes/topics.txt
+./abhi/sasi.txt
+./run
+./run/user1.txt
+./run/user2.txt
+./temp
+./user.txt
+find: ‘-’: No such file or directory
+find: ‘name’: No such file or directory
+user.txt
+munikumar@DESKTOP-UMOOSQ5:~$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+rootfs         152958276 47210420 105747856  31% /
+none           152958276 47210420 105747856  31% /dev
+none           152958276 47210420 105747856  31% /run
+none           152958276 47210420 105747856  31% /run/lock
+none           152958276 47210420 105747856  31% /run/shm
+none           152958276 47210420 105747856  31% /run/user
+tmpfs          152958276 47210420 105747856  31% /sys/fs/cgroup
+C:\            152958276 47210420 105747856  31% /mnt/c
+D:\            411580412   110008 411470404   1% /mnt/d
+E:\            411580412   110008 411470404   1% /mnt/e
+munikumar@DESKTOP-UMOOSQ5:~$ env
+SHELL=/bin/bash
+WSL_DISTRO_NAME=Ubuntu-20.04
+NAME=DESKTOP-UMOOSQ5
+PWD=/home/munikumar
+LOGNAME=munikumar
+MOTD_SHOWN=update-motd
+HOME=/home/munikumar
+LANG=C.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LESSCLOSE=/usr/bin/lesspipe %s %s
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=munikumar
+SHLVL=3
+WSLENV=
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+MAIL=/var/mail/munikumar
+HOSTTYPE=x86_64
+OLDPWD=/home/munikumar/abhi
+_=/usr/bin/env
+munikumar@DESKTOP-UMOOSQ5:~$ info
+munikumar@DESKTOP-UMOOSQ5:~$ ps
+  PID TTY          TIME CMD
+   10 tty1     00:00:00 bash
+  181 tty1     00:00:00 bash
+  200 tty1     00:00:00 ps
+munikumar@DESKTOP-UMOOSQ5:~$ last
+
+wtmp begins Mon Jan 10 22:06:20 2022
+munikumar@DESKTOP-UMOOSQ5:~$ uptime
+ 11:07:16 up 42 min,  0 users,  load average: 0.52, 0.58, 0.59
+munikumar@DESKTOP-UMOOSQ5:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        8139384     4957560     2952472       17720      229352     3048092
+Swap:      19119784      395776    18724008
+munikumar@DESKTOP-UMOOSQ5:~$ cd abhi
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ mkdir -p remove/removel
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ ls
+kubernetes  remove  sasi.txt
+munikumar@DESKTOP-UMOOSQ5:~/abhi$ cd ..
+munikumar@DESKTOP-UMOOSQ5:~$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
